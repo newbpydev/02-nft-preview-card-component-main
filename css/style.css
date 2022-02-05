@@ -42,24 +42,166 @@ The designs were created to the following widths:
 */
 /** General style  */
 * {
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
 
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.8rem;
+  color: hsl(215, 51%, 70%);
+}
 
+p {
+  font-weight: 400;
+}
 
+/** layout style  */
+.content-main {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 12rem;
+  background-color: hsl(217, 54%, 11%);
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
 
+.card {
+  width: 34rem;
+  padding: 2rem;
+  grid-column: 3 / 4;
 
-/** FrontEndMentor style  */
-/** FrontEndMentor style  */
-/** FrontEndMentor style  */
-/** FrontEndMentor style  */
-/** FrontEndMentor style  */
+  background-color: hsl(216, 50%, 16%);
+  box-shadow: 0 2.4rem 6rem rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.4rem;
+}
+
+/** Card style  */
+.card-img-top {
+  width: 100%;
+  height: auto;
+  border-radius: 0.8rem;
+  margin-bottom: 2.4rem;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img-top-eth {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 0.8rem;
+}
+
+.card-img-top-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: hsl(178, 100%, 50%);
+  padding: 15rem;
+  opacity: 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.card-img-top:hover .card-img-top-overlay {
+  opacity: 0.5;
+}
+
+.card-heading {
+  font-weight: 600;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  color: hsl(0, 0%, 100%);
+  transition: all 0.3s;
+}
+.card-heading:hover {
+  color:hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.card-text {
+  font-weight: 300;
+  margin-bottom: 1.6rem;
+}
+
+.card-value-box {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.2rem;
+  border-bottom: 0.1rem solid rgba(139, 172, 218, 0.2);
+  margin-bottom: 1.2rem;
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.card-value {
+  font-weight: 600;
+  color: hsl(178, 100%, 50%);
+}
+
+.card-days-left {
+  font-weight: 400;
+}
+
+.card-creator-box {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.card-img-avatar {
+  height: 3.2rem;
+  border: 0.2rem solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+
+.card-creator {
+}
+
+.creator-name {
+  color: hsl(0, 0%, 100%);
+  transition: all 0.3s;
+}
+
+.creator-name:hover {
+  cursor: pointer;
+  color:hsl(178, 100%, 50%)
+}
+
 /** FrontEndMentor style  */
 .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
+  font-size: 1.1rem;
+  text-align: center;
+  background-color: hsl(217, 54%, 11%);
+  padding-bottom: 2.4rem;
+}
+.attribution a {
+  text-decoration: none;
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and  (max-width: 24em) {
+  .content-main {
+    min-width: 37.5rem;
+  }
+
+  .footer-attribution {
+    min-width: 37.5rem;
+  }
+}

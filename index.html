@@ -15,22 +15,55 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
 
     <title>Frontend Mentor | NFT preview card component</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    Equilibrium #3429 Our Equilibrium collection promotes balance and calm.
-    0.041 ETH 3 days left Creation of Jules Wyvern
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+  <body>
+    <main class="content-main">
+      <article class="card">
+        <div class="card-img-top">
+          <img class="card-img-top-eth" src="images/image-equilibrium.jpg" alt="Image
+          of an Equilibrium cube">
+          <img class="card-img-top-overlay" src="images/icon-view.svg" alt="Image
+          of an Equilibrium cube">
+        </div>
+        
+
+        <p class="card-heading">Equilibrium #3429</p>
+        <p class="card-text">Our Equilibrium collection promotes balance and
+        calm.</p>
+        
+        <div class="card-value-box">
+          <div class="icon-box">
+            <img class="icon-eth" src="images/icon-ethereum.svg" alt="an Ethereum icon">
+            <span class="card-value">0.041 ETH</span>
+          </div>
+
+          <div class="icon-box">
+            <img class="icon-clock" src="images/icon-clock.svg" alt="an icon of a clock">
+            <span class="card-days-left">3 days left</span>
+          </div>
+        </div>
+
+        <div class="card-creator-box">
+          <img class="card-img-avatar" src="images/image-avatar.png" alt="avatar image of Jules Wyvern">
+          <p class="card-creator">Creation of <span class="creator-name">Jules Wyvern</span></p>
+        </div>
+      </article>
+    </main>
+    <footer class="footer-attribution">
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/newbpydev/02-nft-preview-card-component-main">Juan Gomez</a>.
+      </div>
+    </footer>
+
   </body>
 </html>
