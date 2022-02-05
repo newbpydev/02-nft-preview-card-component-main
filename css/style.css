@@ -55,6 +55,7 @@ body {
   font-family: "Outfit", sans-serif;
   font-size: 1.8rem;
   color: hsl(215, 51%, 70%);
+  background-color: hsl(217, 54%, 11%)
 }
 
 p {
@@ -66,9 +67,9 @@ p {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   row-gap: 12rem;
-  background-color: hsl(217, 54%, 11%);
-  padding-top: 12rem;
-  padding-bottom: 12rem;
+
+  padding-top: 4rem;
+  padding-bottom: 2rem;
 }
 
 .card {
